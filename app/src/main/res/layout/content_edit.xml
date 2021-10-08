@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BirthdayDetailActivity"
+    tools:showIn="@layout/activity_birthday_detail">
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="name"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="編集" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="保存" />
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/send_gift_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleName"
+        android:layout_alignRight="@+id/center_view"
+        android:text="贈ったものリスト"
+        android:background="#89EAFF"/>
+
+    <TextView
+        android:id="@+id/send_gift_text"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/send_gift_title"
+        android:layout_alignRight="@+id/center_view"
+        android:background="#00000000"
+        android:scrollbars="vertical"
+        android:gravity="left|top"
+        android:textSize="12sp"
+        android:hint="贈ったものリスト入力"
+        />
+
+    <EditText
+        android:id="@+id/send_gift_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/send_gift_title"
+        android:layout_alignRight="@+id/center_view"
+        android:background="#00000000"
+        android:gravity="left|top"
+        android:visibility="invisible"
+        android:textSize="12sp"
+        android:hint="贈ったものリスト入力" />
+
+    <TextView
+        android:id="@+id/get_gift_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleName"
+        android:layout_alignLeft="@+id/center_view"
+        android:text="もらったものリスト"
+        android:background="#FFB7B7"/>
+
+    <TextView
+        android:id="@+id/get_gift_text"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/get_gift_title"
+        android:layout_alignLeft="@+id/center_view"
+        android:gravity="left|top"
+        android:scrollbars="vertical"
+        android:textSize="12sp"
+        android:background="#00000000"
+        android:hint="もらったものリスト入力" />
+
+    <EditText
+        android:id="@+id/get_gift_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/get_gift_title"
+        android:layout_alignLeft="@+id/center_view"
+        android:gravity="left|top"
+        android:visibility="invisible"
+        android:textSize="12sp"
+        android:background="#00000000"
+        android:hint="もらったものリスト入力" />
+
+    <TextView
+        android:id="@+id/memo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_gift_edit_text"
+        android:text="メモ"
+        android:background="#FBFD95"/>
+
+    <TextView
+    android:id="@+id/memo_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/memo_title"
+    android:gravity="left|top"
+    android:textSize="12sp"
+    android:background="#00000000"
+    android:hint="メモ入力" />
+
+    <EditText
+        android:id="@+id/memo_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/memo_title"
+        android:gravity="left|top"
+        android:scrollbars="vertical"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:background="#00000000"
+        android:hint="メモ入力" />
+
+</RelativeLayout>
